@@ -1,0 +1,40 @@
+float salario, salarioatt;
+            int escolha;
+
+            Console.WriteLine("Switch - Aumento");
+            Console.WriteLine();
+            Console.WriteLine("Opção 1 - Aumento de 9%");
+            Console.WriteLine("Opção 2 - Aumento de 15%");
+            Console.WriteLine("Opção 3 - Aumento de 20%");
+            Console.WriteLine();
+            Console.WriteLine("Digite o seu salário: ");
+            
+
+            salario = float.Parse(Console.ReadLine());
+            Console.WriteLine();
+            Console.WriteLine("Digite a opção de aumento desejada:");
+            escolha = int.Parse(Console.ReadLine());
+            Console.WriteLine();
+
+            switch (escolha)
+            {
+                case 1:
+                    salarioatt = salario / 100 * 9 + salario;
+                    Console.WriteLine("Seu salário atualizado é: " + salarioatt);
+                    break;
+
+                case 2:
+                    salarioatt = salario / 100 * 15 + salario;
+                    Console.WriteLine("Seu salário atualizado é: " + salarioatt);
+                    break;
+
+                case 3:
+                    salarioatt = salario / 100 * 20 + salario;
+                    Console.WriteLine("Seu salário atualizado é: " + salarioatt);
+                    break;
+
+                default:
+                    Console.WriteLine("Opção inválida, tente novamente utilizando as opções 1, 2 ou 3.");
+                    break;
+            }
+            Console.ReadLine();
